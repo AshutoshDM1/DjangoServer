@@ -16,7 +16,7 @@ INSTALLED_APPS = [
     # ...
     'example',
 ]
-ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
+ALLOWED_HOSTS = ['.vercel.app']
 
 WSGI_APPLICATION = 'api.wsgi.app'
 

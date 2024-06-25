@@ -1,20 +1,15 @@
 {
-  "version": 2,
   "builds": [
     {
-      "src": "manage.py",
+      "src": "FirstDjango/wsgi.py",
       "use": "@vercel/python",
-      "config": { "maxLambdaSize": "15mb" }
+      "config": { "maxLambdaSize": "15mb", "runtime": "python3.8" }
     }
   ],
   "routes": [
     {
-      "src": "/static/(.*)",
-      "dest": "/static/$1"
-    },
-    {
       "src": "/(.*)",
-      "dest": "manage.py"
+      "dest": "FirstDjango/wsgi.py"
     }
   ]
 }
