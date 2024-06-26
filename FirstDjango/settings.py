@@ -16,7 +16,7 @@ INSTALLED_APPS = [
     # ...
     'example',
 ]
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['https://django-server-vert.vercel.app']
 
 WSGI_APPLICATION = 'api.wsgi.app'
 
